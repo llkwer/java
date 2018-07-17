@@ -2,7 +2,8 @@ package test12;
 
 import java.util.Scanner;
 
-class ArrayTest {
+public class ArrayTest2 {
+
 	public static void main(String[]args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("숫자를 1부터 5까지 중 1개를 입혁해주세요");
@@ -18,6 +19,5 @@ class ArrayTest {
 			System.out.println("");
 		}
 		System.out.println("니가 입력한 숫자 : "+numStr);
-	}
-
+}
 }
