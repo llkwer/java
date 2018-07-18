@@ -14,13 +14,20 @@ public class MinMax {
 			if(i==0) {
 				min = arr[0];
 				max = arr[0];
-				min = arr[0];
-				max = max[0];
 				
 			}else {
 				if(min>arr[i]) {
 					min = arr[i];
-		}
 			}
-}
+				if(max<arr[i]) {
+					max = arr[i];
+				}
+			}
+		}
+		System.out.println(min);
+		System.out.println(max);
+		for(int i=min;i<=max;i++) {
+			
+		}
 	}
+}
