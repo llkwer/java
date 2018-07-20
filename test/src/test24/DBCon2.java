@@ -9,15 +9,15 @@ import java.sql.Statement;
 public class DBCon2 {
 	public static void main(String[] args) {
 		Connection con;
-		String url = "jdbc:mariadb://127.0.01:3306/oreo";
+		String url = "jdbc:mariadb://127.0.01:3306/oreo"; //jdbc 어딜가나 공통 적인 것(마리아 and 자바 연결 시켜 주는 것)
 		String id = "root";
 		String pwd = "12345678";
 		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-			con = DriverManager.getConnection(url, id, pwd);
-			Statement stmt = con.createStatement();
+			Class.forName("org.mariadb.jdbc.Driver"); // Maria DB를 불러온다
+			con = DriverManager.getConnection(url, id, pwd); // 드라이버매니저를 연결 시켜 주는 것(마리아 DB)
+			Statement stmt = con.createStatement(); // Statement 뜻 : 컴퓨터 지시명령 : 프로그래밍 언어에 있어서 대입 조작, 점프, 반복, 순서 호출 등과 같이 실제 동작을 지시하는 문. 
 			String sql = "delete from user_info where uNum=1";
-			int cnt = stmt.executeUpdate(sql);
+			int cnt = stmt.executeUpdate(sql); // execute 뜻 : 실행하다.
 			if(cnt==1) {
 				System.out.println("1번이 삭제가 잘 됐내요~~");
 			}else {
