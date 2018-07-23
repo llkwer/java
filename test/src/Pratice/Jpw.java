@@ -1,32 +1,11 @@
-package Pratice;
-
-public class Jpw {
-	
-// 1부터 10까지 찍는 소스를 작성 하시오	
-	public static void main(String[] args) {
-		for(int i=0; i<=10; i++) {
-			System.out.println(i);
-		}
-
-
-	}
-}
-//반복문으로 10 부터 1까지 짝수만 찍는 코드를 작성 하시오
-public class Jpw {
-	public static void main(String[] args) {
-	for(int i=10; i>10; i-- )	{
-		if(i%2==0);
-		System.out.println(i);
-	}
-	}
-}
-// 반복문으로 10부터 1까지 홀수만 찍는 코드를 작성하시오
-public class Jpw {
-	public static void main(String[] args) {
-		for(int i=10; i>10; i--) {
-			if(i%2==1);
-			System.out.println(i);
-		}
-	}
-
-}
+//자바의 장점
+//1. 간결하면서도 강력한 객체지향 언어이다.
+//2. 개방형 구조로 여러 기술과 융합이 가능하다.
+//3. 플랫폼에 독립적으로, 여러 운영체제나 하드웨어에서도 동일하게 실행한다.
+//4. 많은 오픈소스 프레임워크로 생산성을 증가하고 유지보수 비용을 절감할 수 있다.
+//
+//자바의 단점
+//1. 처리속도가 중요한 애플리케이션에는 적합하지 않다.
+//2. GUI요소가 많은 MS윈도우 응용프로그램 개발에는 적합하지 않다.
+//3. 하드웨어 연결하여 제어할 수 없기 때문에(가상머신 이용) 직접 하드웨어를 정밀하게 조정해야 하는
+//프로그램에는 적합하지 않다.
