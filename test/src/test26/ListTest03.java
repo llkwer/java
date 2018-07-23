@@ -11,7 +11,7 @@ public class ListTest03 {
 		Scanner s = new Scanner(System.in);
 		for(int i=0; i<5; i++) {
 			System.out.println("이름을 입력해주세요");
-			String name = s.nextLine();
+			String name = s.nextLine(); 
 			System.out.println("나이를 입력해 주세요");
 			int age = Integer.parseInt(s.nextLine());
 			pList.add(new Person(name,age));
